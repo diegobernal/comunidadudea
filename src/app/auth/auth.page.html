@@ -1,9 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>auth</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+<ion-app>
+  <ion-content padding [scrollEvents]="false">
+    <img class="img-auth" src="../../assets/logo.png">
+    <ion-button padding expand="block" color="primary" (click)="facebookLogin()">Facebook:</ion-button>
+    <ion-button padding expand="block" color="danger" (click)="gmailLogin()">Gmail</ion-button>
+    <ion-button padding expand="block" color="dark" (click)="unknownLogin()">Incognito</ion-button>
+    <h4 class="lbl-sign-in">Registarte con tu correo electrónico o número de teléfono</h4>
+  </ion-content>
+  <ion-footer>
+    <h4 class="lbl-footer">¿Ya tienes una cuenta? <span>Inicia Sesión</span></h4>
+  </ion-footer>
+</ion-app>
